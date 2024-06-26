@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 30px;
+            text-align: center;
+            padding-left: 20px;
+        }
+        .message {
+            font-size: 14px;
+        }
+        .link {
+            font-size: 14px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function redirect() {
+            const mediumUrl = "http://medium.com/@andremafei/ga-nitro-backup-7ca6c376f585?source=friends_link&sk=6af476efa49a58f246885c19907e2764";
+            top.location.href = mediumUrl;
+        }
+        
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p class="message">You are being redirected. If the redirection does not happen automatically, click the link below:</p>
+    <p class="link" onclick="redirect()">Go to GA Nitro Backup detail page</p>
+</body>
+</html>
